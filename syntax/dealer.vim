@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:	Dealer script
 " Version: 1.0
-" Last Change:	16.Mar.2013
+" Last Change:	18.Mar.2013
 " Maintainer:  Dave Doran <dave.doran.wex@gmail.com>
 
 if exists("b:current_syntax")
@@ -31,16 +31,17 @@ syntax keyword dealerFunction pt0 pt1 pt2 pt3 pt4 pt5 pt6 pt7 pt8 pt9
 syntax keyword dealerFunction tens jacks queens kings aces top2 top3 top4 top5 c13
 syntax keyword dealerFunction shape hascard
 
-" A suit, e.g. "spades" can either be used as a function or a parameter
-syntax match dealerSuitFunction "spades(\@="
-syntax match dealerSuitFunction "hearts(\@="
-syntax match dealerSuitFunction "diamonds(\@="
-syntax match dealerSuitFunction "clubs(\@="
+" A suit, e.g. "spades" can either be used as a function or a parameter.
+" When it is a function, it will be followed by "("
+syntax match dealerSuitFunction "\<spades\>(\@="
+syntax match dealerSuitFunction "\<hearts\>(\@="
+syntax match dealerSuitFunction "\<diamonds\>(\@="
+syntax match dealerSuitFunction "\<clubs\>(\@="
 
-syntax match dealerSuitParameter "spades(\@!"
-syntax match dealerSuitParameter "hearts(\@!"
-syntax match dealerSuitParameter "diamonds(\@!"
-syntax match dealerSuitParameter "clubs(\@!"
+syntax match dealerSuitParameter "\<spades\>(\@!"
+syntax match dealerSuitParameter "\<hearts\>(\@!"
+syntax match dealerSuitParameter "\<diamonds\>(\@!"
+syntax match dealerSuitParameter "\<clubs\>(\@!"
 
 syntax keyword dealerAction printall print printew printpbn printcompact
 syntax keyword dealerAction printoneline printes average frequency
