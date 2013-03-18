@@ -2,7 +2,6 @@
 " Language:	Dealer script
 " Version: 1.0
 " Last Change:	18.Mar.2013
-" Maintainer:  Dave Doran <dave.doran.wex@gmail.com>
 
 if exists("b:current_syntax")
   finish
