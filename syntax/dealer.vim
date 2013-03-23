@@ -28,7 +28,7 @@ syntax region dealerCommnet start="/\*" end="\*/"
 syntax keyword dealerFunction hcp control loser ccc quality tricks score imps
 syntax keyword dealerFunction pt0 pt1 pt2 pt3 pt4 pt5 pt6 pt7 pt8 pt9
 syntax keyword dealerFunction tens jacks queens kings aces top2 top3 top4 top5 c13
-syntax keyword dealerFunction shape hascard
+syntax keyword dealerFunction shape hascard losers
 
 " A suit, e.g. "spades" can either be used as a function or a parameter.
 " When it is a function, it will be followed by "("
